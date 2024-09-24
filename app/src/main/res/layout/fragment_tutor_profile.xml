@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorProfileFragment"
+    android:background="@color/colorBlack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Introduction"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tutorMessageProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="13sp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coins Consumed"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/startSuddenLesson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="13sp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/bookedLesson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="13sp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Features"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/featuresProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="13sp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hobbies"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/hobbiesProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="work experience"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generation choosing this instructor"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommended Tutors"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="15sp"
+            android:layout_marginVertical="50dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</FrameLayout>

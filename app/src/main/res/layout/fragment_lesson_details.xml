@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorProfileFragment"
+    android:background="@color/colorBlack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lesson achievements"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/suddenLessonDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="13sp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/bookedLessonDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="13sp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lessons with this tutor"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/bookedLesson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You don't have any lesson history with this tutor yet.\nLet's take a lesson."
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="13sp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Textbook this tutor can use"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/featuresProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="13sp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommended Tutors"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/hobbiesProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+</FrameLayout>

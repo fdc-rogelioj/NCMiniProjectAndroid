@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorProfileFragment"
+    android:background="@color/colorBlack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textViewResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result:"
+                android:textSize="16sp"
+                android:textColor="@color/colorOnPrimary"
+                android:layout_marginEnd="8dp" />
+
+            <ImageView
+                android:id="@+id/imageViewRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:src="@drawable/ic_rating" />
+
+            <TextView
+                android:id="@+id/teacherEvalRatings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="16sp"
+                android:layout_marginStart="1dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Textbook"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommended tutors"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="15sp"
+            android:layout_marginTop="100dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/hobbiesProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorBlack">
+
+    <!-- Top TabLayout (Lessons and NcPlus) -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        app:tabIndicatorColor="@color/colorOrange"
+        app:tabIndicatorFullWidth="false"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@android:color/white"
+        app:tabMode="fixed">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/buttonLessons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LESSONS"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="17sp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/buttonNcPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NC+"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="17sp" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- Fragment container -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
