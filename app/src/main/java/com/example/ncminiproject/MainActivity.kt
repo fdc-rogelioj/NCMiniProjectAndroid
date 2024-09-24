@@ -59,14 +59,21 @@ class MainActivity : AppCompatActivity() {
             showFragment(TeacherListFragment())
         }
 
-        // Set up back press callback
         onBackPressedDispatcher.addCallback(this) {
             if (supportFragmentManager.backStackEntryCount == 0) {
+                // This is the root of the back stack, show the TabLayout
                 tabLayout.visibility = View.VISIBLE
             } else {
+                // Check if the current fragment is TeacherDetailsFragment
+                val currentFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainer)
+                if (currentFragment is TeacherDetailsFragment) {
+                    // Show TabLayout when returning to TeacherListFragment
+                    tabLayout.visibility = View.VISIBLE
+                }
                 supportFragmentManager.popBackStack()
             }
         }
+
     }
 
     private fun showFragment(fragment: Fragment) {
